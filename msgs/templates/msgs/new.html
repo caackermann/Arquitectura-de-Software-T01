@@ -1,0 +1,7 @@
+<h1>Crear Mensaje</h1>
+<form method="POST" >{% csrf_token %}
+    <label for="msg_text">Texto:</label>
+    <input id="msg_text" type="text" name="msg_text">
+    <input type="hidden" id="client_ip" value="{{ ip_client }}">
+    <button type="submit" class="save btn btn-default">Guardar</button>
+</form>

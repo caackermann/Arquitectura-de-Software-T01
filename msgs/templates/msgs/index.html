@@ -1,0 +1,16 @@
+<a href="{% url 'new' %}">Agregar Mensaje</span></a>
+{% if latest_msgs_list %}
+    
+    {% for msg in latest_msgs_list %}
+    <ul>
+        <li>Mensaje: {{ msg.msg_text }}</li>
+        <li>publicado en: {{msg.pub_date}}</li>
+        <li>IP Cliente: {{msg.client_ip}}</li>
+    </ul>
+        
+    {% endfor %}
+
+{% else %}
+    <p>No hay mensajes disponibles</p>
+{% endif %}
+

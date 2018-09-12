@@ -31,6 +31,7 @@ ALLOWED_HOSTS = ['charette20.ing.puc.cl', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'msgs.apps.MsgsConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

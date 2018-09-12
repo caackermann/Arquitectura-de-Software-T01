@@ -139,4 +139,6 @@ venv.bak/
 dmypy.json
 
 #virtualenv
-projectenv/
+myprojectenv/
+
+.vscode
